@@ -94,6 +94,19 @@ header a.wordlink {
     margin-right: 550px;
 }
 
+.footer-imprint {
+    text-decoration: none;
+    color: #999999;
+    font-size: 15px;
+    text-align: left;
+}
+
+.footer-copyright {
+    color: #999999;
+    font-size: 15px;
+    text-align: right;
+}
+
 .contentheader {
     font-size: 40px;
 }
