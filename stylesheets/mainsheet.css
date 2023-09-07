@@ -19,11 +19,11 @@ header a.imagelink, .maincompanybtn {
     box-shadow: none;
 }
 
-header a.imagelink:focus, .maincompanybtn:focus {
+header a.companyimagelink:focus, .maincompanybtn:focus {
     outline: none;
 }
 
-header a.wordlink {
+header a.companywordlink {
     text-decoration: none;
     color: black;
 }
@@ -42,12 +42,12 @@ header a.wordlink {
     text-decoration: none;
 }
         
-.dropdown {
+.nav-dropdown {
     float: left;
     overflow: hidden;
 }
         
-.dropdown .dropdownbtn {
+.nav-dropdown .dropdownbtn {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -58,7 +58,7 @@ header a.wordlink {
     margin: 0;
 }
         
-.nav a:hover, .dropdown:hover .dropdownbtn {
+.nav a:hover, .nav-dropdown:hover .dropdownbtn {
     background-color: #3c20e9;
 }
         
@@ -84,7 +84,7 @@ header a.wordlink {
     background-color: #b3b3ff;
 }
         
-.dropdown:hover .dropdown-content {
+.nav-dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -94,17 +94,11 @@ header a.wordlink {
     margin-right: 550px;
 }
 
-.footer-imprint {
+.footer {
     text-decoration: none;
     color: #999999;
     font-size: 15px;
     text-align: left;
-}
-
-.footer-copyright {
-    color: #999999;
-    font-size: 15px;
-    text-align: right;
 }
 
 .footer-clear {

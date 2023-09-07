@@ -1,0 +1,26 @@
+<!-- Start Content -->
+        <div class="content-clearbox">
+            <!-- Start About Me Section -->
+            <section>
+                <p class="contentheader">&Uuml;ber mich</p>
+                <p class="content">Als noch momentaner Sch&uuml;ler habe ich auch das interesse f&uuml;rs programmieren in der Schule kennengelert und es lieben gelernt.</p>
+                <p class="content">Schon bevor ich richtig verstanden habe, was programmieren &uuml;berhaupt richtig ist habe ich selbst schon die ein oder andere Mod aus dem Landwirtschafts Simulator ver&auml;ndert oder auch in Minecraft Modpack zusammengebaut und Craftingrezepte ver&auml;ndert oder in den Config-Dateien herumgeschrieben. Erst seitdem ich in der Schule gelernt habe was programmieren ist und wie man "richtig" programmiert habe ich auch die Faszination und m&ouml;glichkeiten hinter dem programmieren gesehen.</p>
+                <p class="content">Einige wenige Schulstunden haben ausgerreicht, um mich vom programmieren zu &uuml;berzeugen und selber anzufangen und Creativ zu werden.</p>
+                <p class="content">Die ersten Spiele die ich in der Schule programmiert habe sind Tic-Tac-Toe und Minesweeper. Diese Spiele habe ich noch nicht selber programmiert sondern mit hilfe der Lehrkraft und w&uuml;rde diese Spiele somit auch nicht als meine eigenen Spiele bezeichnen.</p>
+                <p class="content">In der 12. Klasse mussten wir als Sch&uuml;ler im Praxisunterricht ein Projekt bearbeiten, welches dann am Ende mit einer Note bewertet wurde. In diesem Jahr habe ich dann auch das Spiel Tetris selber einmal programmiert und dies dann als mein Praxisprojekt abgegeben. Eigentlich sollte Tetris noch auf einem Raspberry Pi laufen jedoch ist uns beim Aufbau die Mikro-SD Karte durchgebrochen und wir waren gezwungen Tetris &uuml;ber einen Computer laufen zu laseen.</p>
+                <p class="content">Momentan arbeite ich an einem eigenen Minecraft Modpack, an einer Karte f&uuml;r den Landwirtschafts Simulator 22 und an einem weitern eigens programmierten Spiel: Farming Life</p>
+            </section>
+            <!-- End About Me Section -->
+        </div>
+        <!-- End Content -->
+
+
+
+<div class="content-clearbox">
+            <section>
+                <p class="contentheader">Impressum</p>
+                <p class="content"><strong>Stokman Games</strong><br>Jos Stokman<br>Aatalstr. 18<br>49824 Emlichheim<br>Germany</p>
+                <p class="contentheader">Kontakt</p>
+                <p class="content">Tel.: +49 15209275219<br>E-Mail: jos.stokman@web.de</p>
+            </section>
+        </div>
