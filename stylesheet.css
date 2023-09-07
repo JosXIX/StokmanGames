@@ -107,6 +107,13 @@ header a.wordlink {
     text-align: right;
 }
 
+.footer-clear {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 .contentheader {
     font-size: 40px;
 }
