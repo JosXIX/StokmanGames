@@ -1,12 +1,16 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-color-scheme: dark) {
+    body, h1, p {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #262626;
+        color: #d9d9d9;
+    }
 }
 
 header {
     background-attachment: fixed;
 }
 
-h1 {
+.companywordlogo {
     position: absolute;
     left: 110px;
     top: 23px;
@@ -88,12 +92,6 @@ header a.companywordlink {
     display: block;
 }
 
-.content-clearbox{
-    margin-top: 50px;
-    margin-left: 150px;
-    margin-right: 550px;
-}
-
 .footer {
     text-decoration: none;
     color: #999999;
@@ -106,13 +104,4 @@ header a.companywordlink {
     margin-bottom: 80px;
     margin-left: 100px;
     margin-right: 100px;
-}
-
-.contentheader {
-    font-size: 40px;
-}
-
-.content {
-    font-size: 25px;
-    text-align: justify;
 }

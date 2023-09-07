@@ -1,0 +1,14 @@
+.contentheader {
+    font-size: 40px;
+}
+
+.content {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.content-clearbox{
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 550px;
+}
