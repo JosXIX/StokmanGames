@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #262626;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #262626;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+header {
+    position: relative;
+    width: 100px;
+    padding-bottom: 4px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+header a {
+    text-decoration: none;
+    color: #262626;
+}
+
+header h1 {
+    position: absolute;
+    left: 103px;
+    top: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #ccc;
+}
+        
+nav a {
+    float: left;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+        
+.nav-dropdown {
+    float: left;
+    overflow: hidden;
+}
+        
+.nav-dropdown .dropdownbtn {
+    font-size: 1rem;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+        
+nav a:hover, .nav-dropdown:hover .dropdownbtn {
+    background-color: #3385ff;
+}
+        
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 1px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+        
+.dropdown-content a:hover {
+    background-color: #4d94ff;
+}
+        
+.nav-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer {
+    text-decoration: none;
+    color: #808080;
+    font-size: 0.9375rem;
+    text-align: left;
+    margin: 50px 0;
+}
+
+footer {
+    background-color: #262626;
+}
+
+.display-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.padding-down {
+    padding-bottom: 5%;
+}
+
+.main-content-margin {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.margin-left {
+    margin-left: 30px;
+}
+
+.margin-left-tabledata {
+    margin-left: 20px;
+}
+
+.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+.center-div {
+    margin: auto;
+}
+
+.nostyle-link {
+    text-decoration: none;
+}
+
+.style-link {
+    color: #4d94ff;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.table-border-bottom {
+    border-bottom: 1px solid;
+    border-bottom-color: #262626;
+}
+
+.listitem-marker-dash {
+    list-style-type: '-   ';
+}
+
+.downloadbtn {
+    background-color: #ccc;
+    width: 90%;
+    margin: 0;
+    display: inline-block;
+}
+
+.downloadbtn a {
+    line-height: 60px;
+}
+
+.downloadbtn p {
+    color: #262626;
+    text-align: center;
+    margin: 0;
+}
+
+.downloadbtn:hover {
+    background-color: #3385ff;
+}

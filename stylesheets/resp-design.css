@@ -1,0 +1,111 @@
+@media only screen and (min-width: 800px) {
+    .grid-container-main {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "header-position"
+        "nav-position"
+        "content-position"
+        "footer-position";
+    }
+
+    .header-grid-position {
+        grid-area: header-position;
+    }
+
+    header {
+        width: 357.36px;
+        margin: auto;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        position: absolute;
+        left: 205px;
+        top: 10px;
+    }
+
+    section h2 {
+        font-size: 3rem;
+    }
+
+    .nav-start {
+        margin-left: 6%;
+    }
+
+    .nav-grid-position {
+        grid-area: nav-position;
+    }
+
+    .footer-grid-position {
+        grid-area: footer-position;
+    }
+
+    .content-grid-position {
+        grid-area: content-position;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #262626;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        color: #d9d9d9;
+    }
+
+    nav {
+        background-color: #333;
+    }
+
+    .dropdown-content {
+        background-color: #333;
+    }
+
+    nav a:hover, .nav-dropdown:hover .dropdownbtn {
+        background-color: #3c20e9;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #0066ff;
+    }
+
+    footer {
+        background-color: #151515;
+    }
+
+    .downloadbtn {
+        background-color: #333;
+    }
+    
+    .downloadbtn p {
+        color: #d9d9d9;
+    }
+
+    .downloadbtn:hover {
+        background-color: #3c20e9;
+    }
+
+    .moditembtn {
+        background-color: #333;
+    }
+
+    .moditembtn p {
+        color: #d9d9d9;
+    }
+
+    .moditembtn:hover {
+        background-color: #3c20e9;
+    }
+
+    .table-border-bottom {
+        border-bottom-color: #d9d9d9;
+    }
+}

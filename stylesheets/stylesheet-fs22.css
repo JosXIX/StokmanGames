@@ -1,0 +1,141 @@
+.moditem-max-width {
+    max-width: 400px;
+    width: 100%;
+}
+
+.moditem-header {
+    background-color: #151515;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.moditem-image {
+    width: 100%;
+}
+
+.moditembtn {
+    width: 100%;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.moditembtn a {
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.moditembtn:hover {
+    background-color: #4d94ff;
+}
+
+.moditembtn p {
+    color: #262626;
+    text-align: center;
+    margin: 0;
+}
+
+.modpage-gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.modpage-image {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 900px) {
+    .grid-container-fs22 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0;
+        grid-template-areas: 
+        "fs22-content-header-position fs22-content-header-position"
+        "moditem-sw4014-position none";
+    }
+
+    .fs22-content-header-grid-position {
+        grid-area: fs22-content-header-position;
+    }
+
+    .moditem-sw4014-grid-position {
+        grid-area: moditem-sw4014-position;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .grid-container-fs22 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0;
+        grid-template-areas: 
+        "fs22-content-header-position fs22-content-header-position fs22-content-header-position"
+        "moditem-sw4014-position none none";
+    }
+
+    .fs22-content-header-grid-position {
+        grid-area: fs22-content-header-position;
+    }
+
+    .moditem-sw4014-grid-position {
+        grid-area: moditem-sw4014-position;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .grid-container-fs22-modpage {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 0;
+        grid-template-areas: 
+        "fs22-modpage-content-header-position fs22-modpage-content-header-position fs22-modpage-content-header-position"
+        "fs22-modpage-moddescribtion-position fs22-modpage-datatable-position fs22-modpage-downloadbtn-position"
+        "fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position"
+        "fs22-modpage-changelog-position fs22-modpage-changelog-position fs22-modpage-changelog-position";
+    }
+
+    .fs22-modpage-content-header-grid-position {
+        grid-area: fs22-modpage-content-header-position;
+    }
+
+    .fs22-modpage-moddescribtion-grid-position {
+        grid-area: fs22-modpage-moddescribtion-position;
+    }
+
+    .fs22-modpage-datatable-grid-position {
+        grid-area: fs22-modpage-datatable-position;
+        margin: auto;
+    }
+
+    .fs22-modpage-downloadbtn-grid-position {
+        grid-area: fs22-modpage-downloadbtn-position;
+        max-width: 400px;
+    }
+
+    .fs22-modpage-slideable-gallery-grid-position {
+        grid-area: fs22-modpage-slideable-gallery-position;
+    }
+
+    .fs22-modpage-changelog-grid-position {
+        grid-area: fs22-modpage-changelog-position;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+}
