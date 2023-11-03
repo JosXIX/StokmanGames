@@ -16,6 +16,11 @@ p {
     font-size: 1.2rem;
 }
 
+a {
+    text-decoration: none;
+    color: #4d94ff;
+}
+
 header {
     position: relative;
     width: 100px;
@@ -150,14 +155,6 @@ footer {
 
 .center-div {
     margin: auto;
-}
-
-.nostyle-link {
-    text-decoration: none;
-}
-
-.style-link {
-    color: #4d94ff;
 }
 
 .inline-block {
