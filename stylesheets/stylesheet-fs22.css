@@ -54,6 +54,10 @@
     padding-right: 20px;
 }
 
+.issuelist-style {
+    list-style-type: var("#");
+}
+
 @media only screen and (min-width: 900px) {
     .grid-container-fs22 {
         display: grid;
@@ -114,7 +118,8 @@
         "fs22-modpage-content-header-position fs22-modpage-content-header-position fs22-modpage-content-header-position"
         "fs22-modpage-moddescribtion-position fs22-modpage-datatable-position fs22-modpage-downloadbtn-position"
         "fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position"
-        "fs22-modpage-changelog-position fs22-modpage-changelog-position fs22-modpage-changelog-position";
+        "fs22-modpage-changelog-position fs22-modpage-changelog-position fs22-modpage-changelog-position"
+        "fs22-modpage-knownissues-position fs22-modpage-knownissues-position fs22-modpage-knownissues-position";
     }
 
     .fs22-modpage-content-header-grid-position {
@@ -141,5 +146,9 @@
 
     .fs22-modpage-changelog-grid-position {
         grid-area: fs22-modpage-changelog-position;
+    }
+
+    .fs22-modpage-knownissues-grid-position {
+        grid-area: fs22-modpage-knownissues-position;
     }
 }
