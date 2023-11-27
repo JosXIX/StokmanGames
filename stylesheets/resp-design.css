@@ -1,3 +1,9 @@
+:root {
+    --sub-color: var(#d9d9d9);
+    --sub-backcolor: var(#262626);
+    --sub-btncolor: var(#3c20e9);
+}
+
 @media only screen and (min-width: 800px) {
     .grid-container-main {
         margin: auto;
@@ -107,6 +113,10 @@
 
     .table-border-bottom {
         border-bottom-color: #d9d9d9;
+    }
+
+    .prev, .next {
+        color: #d9d9d9;
     }
 
     .imprint-image-mail {

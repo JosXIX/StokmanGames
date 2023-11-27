@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,7 +93,6 @@
                     <p><a href="#changelog" class="inline-block">Changelog</a></p>
                     <p><a href="#knownissues" class="inline-block">Bekannte Probleme</a></p>
                     <p><a href="https://github.com/JosXIX/PoetingerImpress185Pro/issues" target="_blank" class="inline-block">Weitere Probleme</a></p>
-                    <!--Bekannte Probleme (GitHub)-->
                 </section>
                 <aside class="fs22-modpage-datatable-grid-position">
                     <table class="fs22-modpage-datatable display-center">
@@ -139,20 +138,42 @@
                         </tr>
                     </table>
                 </aside>
-                <!--Change Download-->
                 <section class="fs22-modpage-downloadbtn-grid-position display-center padding-down">
                     <button class="downloadbtn">
                         <a href="https://github.com/JosXIX/PoetingerImpress185Pro/releases/tag/1.0.0.0" target="_blank"><p>Download</p></a>
                     </button>
                 </section>
-                <section class="fs22-modpage-slideable-gallery-grid-position modpage-gallery-container">
-                    <div class="image-slider">
-                        <img src="../images/mods/fs22/impress185pro/impress185proatstore.jpg" alt="" class="modpage-image">
-                        <img src="../images/mods/fs22/impress185pro/ipress185prowithbales.jpg" alt="" class="modpage-image">
-                        <img src="../images/mods/fs22/impress185pro/impress185proatwork.jpg" alt="" class="modpage-image">
-                        <img src="../images/mods/fs22/impress185pro/impress185prounloading1.jpg" alt="" class="modpage-image">
-                        <img src="../images/mods/fs22/impress185pro/impress185prounloading2.jpg" alt="" class="modpage-image">
-                        <img src="../images/mods/fs22/impress185pro/impress185prostornormal.jpg" alt="" class="modpage-image">
+                <section class="fs22-modpage-slideable-gallery-grid-position modpage-gallery-container align-verticaly">
+                    <div id="image-slider">
+                        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/impress185proatstore.jpg" alt="" class="modpage-image">
+                        </div>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/ipress185prowithbales.jpg" alt="" class="modpage-image">    
+                        </div>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/impress185proatwork.jpg" alt="" class="modpage-image">    
+                        </div>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/impress185prounloading1.jpg" alt="" class="modpage-image">    
+                        </div>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/impress185prounloading2.jpg" alt="" class="modpage-image">    
+                        </div>
+                        <div class="my-slide fade">
+                            <img src="../images/mods/fs22/impress185pro/impress185prostornormal.jpg" alt="" class="modpage-image">    
+                        </div>
+                        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div class="center-div">
+                        <span class="dot" onclick="currentSlide(0)"></span>
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
                     </div>
                 </section>
                 <section id="changelog" class="fs22-modpage-changelog-grid-position">

@@ -153,6 +153,11 @@ footer {
     text-align: justify;
 }
 
+.align-verticaly {
+    display: flex;
+    flex-direction: column;
+}
+
 .center-div {
     margin: auto;
 }
@@ -189,4 +194,18 @@ footer {
 
 .downloadbtn:hover {
     background-color: #3385ff;
+}
+
+.fade {
+    animation: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
 }

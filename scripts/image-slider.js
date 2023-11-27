@@ -1,19 +1,43 @@
-const imageSlider = document.querySelector('.image-slider');
+const imageSlider = document.getElementById('image-slider');
+const slide = document.getElementsByClassName('my-slide');
+const dot = document.getElementsByClassName('dot');
 let currentIndex = 0;
-const autoChangeInterval = 5000;
+let timeoutId = null;
 
-function updateSliderPosition() {
-    const translateX = -currentIndex * 100;
-    imageSlider.style.transform = `translate(${translateX}%)`;
+showSlides();
+
+function currentSlide(index) {
+    currentIndex = index;
+    showSlides();
 }
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % imageSlider.children.length;
-    updateSliderPosition();
+function plusSlide(step) {
+    if (step < 0) {
+        currentIndex -= 2;
+
+        if (currentIndex < 0) {
+            currentIndex = slide.length - 1;
+        }
+    }
+
+    showSlides();
 }
 
-function startAutoChangeTimer() {
-    setInterval(nextSlide, autoChangeInterval);
-}
+function showSlides() {
+    for (let i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
+        dot[i].classList.remove('active');
+    }
 
-startAutoChangeTimer();
+    currentIndex++;
+    if (currentIndex > slide.length) {
+        currentIndex = 1;
+    }
+    slide[currentIndex - 1].style.display = "block";
+    dot[currentIndex - 1].classList.add('active');
+
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+    timeoutId = setTimeout(showSlides, 5000);
+}
