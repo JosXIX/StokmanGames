@@ -1,4 +1,4 @@
-const imageSlider = document.getElementById('image-slider');
+const imageSlider = document.getElementById('slider');
 const slide = document.getElementsByClassName('my-slide');
 const dot = document.getElementsByClassName('dot');
 let currentIndex = 0;
@@ -33,7 +33,7 @@ function showSlides() {
     if (currentIndex > slide.length) {
         currentIndex = 1;
     }
-    slide[currentIndex - 1].style.display = "block";
+    slide[currentIndex - 1].style.display = "flex";
     dot[currentIndex - 1].classList.add('active');
 
     if (timeoutId) {

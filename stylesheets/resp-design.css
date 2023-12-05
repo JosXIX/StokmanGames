@@ -1,9 +1,3 @@
-:root {
-    --sub-color: var(#d9d9d9);
-    --sub-backcolor: var(#262626);
-    --sub-btncolor: var(#3c20e9);
-}
-
 @media only screen and (min-width: 800px) {
     .grid-container-main {
         margin: auto;
@@ -63,7 +57,7 @@
         background-color: #262626;
     }
 
-    h1, h2, h3, h4, h5, h6, p {
+    h1, h2, h3, h4, h5, h6, p, div, button {
         color: #d9d9d9;
     }
 
@@ -121,6 +115,14 @@
 
     .prev:hover, .next:hover {
         background-color: #000
+    }
+
+    #assets-menu {
+        background-color: #262626;
+    }
+
+    .date {
+        color: #3c20e9;
     }
 
     .imprint-image-mail {

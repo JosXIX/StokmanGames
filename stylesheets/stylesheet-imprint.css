@@ -7,5 +7,6 @@
 }
 
 .imprint-image-mail {
-    width: 214px;
+    max-width: 214px;
+    width: 100%;
 }

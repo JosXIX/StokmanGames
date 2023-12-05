@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stokman Games | Bilder/Video</title>
+    <link rel="stylesheet" href="../stylesheets/stylesheet-main.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet-assets.css">
+    <link rel="stylesheet" href="../stylesheets/resp-design.css">
+    <link rel="icon" href="../images/company/stokmangames.png">
+</head>
+<body>
+    <!--Start Header-->
+    <header>
+        <a href="index.html"><img src="../images/company/stokmangames.png" alt="Stokman Games"></a>
+        <a href="index.html"><h1>tokman Games</h1></a>
+    </header>
+    <!--End Header-->
+    <!--Start Nav-->
+    <nav>
+        <a href="index.html" class="nav-start"><p>Startseite</p></a>
+        <div class="nav-dropdown">
+            <button class="dropdownbtn"><p>Spiele</p></button>
+            <div class="dropdown-content">
+                <a href="tetris.html"><p>Tetris</p></a>
+            </div>
+        </div>
+        <div class="nav-dropdown">
+            <button class="dropdownbtn"><p>Mods</p></button>
+            <div class="dropdown-content">
+                <a href="fs22.html"><p>Landwirtschaft Simulator 22</p></a>
+            </div>
+        </div>
+        <a href="assets.html"><p>Bilder/Videos</p></a>
+    </nav>
+    <!--End Nav-->
+    <!--Start Main Content-->
+    <div class="grid-container-assets main-content-margin">
+        <section>
+            <h2>Stokman Games | Bilder und Videos</h2>
+        </section>
+        <section>
+            <p>Assets</p>
+        </section>
+        <div id="assets-menu" class="sticky-top">
+            <button class="assets-menu-tab" onclick="changeTab(0)"><p class="no-margin">News</p></button>
+            <button class="assets-menu-tab" onclick="changeTab(1)"><p class="no-margin">Bilder</p></button>
+            <button class="assets-menu-tab" onclick="changeTab(2)"><p class="no-margin">Videos</p></button>
+            <button class="assets-menu-tab" onclick="changeTab(3)"><p class="no-margin">Screenshots</p></button>
+        </div>
+        <div id="news" class="tab">
+            
+        </div>
+        <div id="pictures" class="tab">
+            <div class="assets-wrapper">
+                <div class="assets-header">
+                    <button class="assets-menu-tab" onclick="changeAssetContainer(this)">
+                        <span class="span-element date">></span>
+                        <p class="no-margin date rotate-hight">9 November 2023</p>
+                        <span class="assets-header-desc">Kuhn SW 4014</span>
+                    </button>
+                </div>
+                <div class="assets-container">
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/sw4014atstore.jpg" download="sw4014atstore" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/sw4014atstore.jpg" alt="Kuhn SW 4014" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">sw4014atstore.jpeg</p>
+                            <p class="assets-desc-text no-margin">547KB</p>
+                            <button class="checkbox" onclick="changeChecked(this)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="videos" class="tab">
+
+        </div>
+        <div id="screenshots" class="tab">
+
+        </div>
+    </div>
+    <!--End Main Content-->
+    <!--Start Footer-->
+    <footer class="display-center">
+        <p class="footer"><a href="about.html">&Uuml;ber mich</a> | <a href="imprint.html">Impressum</a> | <a href="tos.html">Terms of Service</a><br>&copy; Stokman Games. All Rights Reserved</p>
+    </footer>
+    <!--End Footer-->
+    <script src="../scripts/change-display"></script>
+</body>
+</html>
