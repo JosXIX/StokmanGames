@@ -20,12 +20,6 @@
     <nav>
         <a href="index.html" class="nav-start"><p>Startseite</p></a>
         <div class="nav-dropdown">
-            <button class="dropdownbtn"><p>Spiele</p></button>
-            <div class="dropdown-content">
-                <a href="tetris.html"><p>Tetris</p></a>
-            </div>
-        </div>
-        <div class="nav-dropdown">
             <button class="dropdownbtn"><p>Mods</p></button>
             <div class="dropdown-content">
                 <a href="fs22.html"><p>Landwirtschaft Simulator 22</p></a>
@@ -35,12 +29,10 @@
     </nav>
     <!--End Nav-->
     <!--Start Main Content-->
-    <div class="grid-container-assets main-content-margin">
+    <div class="main-content-margin">
         <section>
             <h2>Stokman Games | Bilder und Videos</h2>
-        </section>
-        <section>
-            <p>Assets</p>
+            <h3 id="assets" class="display-center">Assets</h3>
         </section>
         <div id="assets-menu" class="sticky-top">
             <button class="assets-menu-tab" onclick="changeTab(0)"><p class="no-margin">News</p></button>
@@ -54,7 +46,78 @@
         <div id="pictures" class="tab">
             <div class="assets-wrapper">
                 <div class="assets-header">
-                    <button class="assets-menu-tab" onclick="changeAssetContainer(this)">
+                    <button class="assets-header-tab" onclick="changeAssetContainer(this)">
+                        <span class="span-element date">></span>
+                        <p class="no-margin date rotate-hight">15 November 2023</p>
+                        <span class="assets-header-desc">P&ouml;ttinger Impress 185 Pro</span>
+                    </button>
+                </div>
+                <div class="assets-container">
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185proatstore.jpg" download="impress185proatstore.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185proatstore.jpg" alt="Pöttinger Impress 185 Pro" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185proatstore.jpg</p>
+                            <p class="assets-desc-text no-margin">535KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185prowithbales.jpg" download="impress185prowithbales.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185prowithbales.jpg" alt="Pöttinger Impress 185 Pro und verschieden gro&szlig;e Ballen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185prowithbales.jpg</p>
+                            <p class="assets-desc-text no-margin">548KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185proatwork.jpg" download="impress185proatwork.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185proatwork.jpg" alt="P&ouml;ttinger Impress 185 Pro presst Ballen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185proatwork.jpg</p>
+                            <p class="assets-desc-text no-margin">428KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185prounloading1.jpg" download="impress185prounloading1.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185prounloading1.jpg" alt="P&ouml;ttinger Impress 185 Pro Ballen auswerfen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185prounloading1.jpg</p>
+                            <p class="assets-desc-text no-margin">456KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185prounloading2.jpg" download="impress185prounloading2.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185prounloading2.jpg" alt="P&ouml;ttinger Impress 185 Pro Ballen ablegen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185prounloading2.jpg</p>
+                            <p class="assets-desc-text no-margin">451KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/impress185pro/impress185prostornormal.jpg" download="impress185prostornormal.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/impress185pro/impress185prostornormal.jpg" alt="P&ouml;ttinger Impress 185 Pro" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">impress185prostornormal.jpg</p>
+                            <p class="assets-desc-text no-margin">324KB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="assets-wrapper">
+                <div class="assets-header">
+                    <button class="assets-header-tab" onclick="changeAssetContainer(this)">
                         <span class="span-element date">></span>
                         <p class="no-margin date rotate-hight">9 November 2023</p>
                         <span class="assets-header-desc">Kuhn SW 4014</span>
@@ -62,14 +125,63 @@
                 </div>
                 <div class="assets-container">
                     <div class="assets-item">
-                        <a href="../images/mods/fs22/sw4014/sw4014atstore.jpg" download="../images/mods/fs22/sw4014/sw4014atstore.jpg" class="assets-image">
+                        <a href="../images/mods/fs22/sw4014/sw4014atstore.jpg" download="sw4014atstore.jpg" class="assets-image">
                             <img src="../images/mods/fs22/sw4014/sw4014atstore.jpg" alt="Kuhn SW 4014" class="assets-image-width">
                         </a>
                         <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
                         <div class="assets-desc">
-                            <p class="assets-desc-text no-margin">sw4014atstore.jpeg</p>
+                            <p class="assets-desc-text no-margin">sw4014atstore.jpg</p>
                             <p class="assets-desc-text no-margin">547KB</p>
-                            <button class="checkbox" onclick="changeChecked(this)"></button>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/sw40140withbales.jpg" download="sw40140withbales.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/sw40140withbales.jpg" alt="Kuhn SW 4014 und verschieden gro&szlig;e Ballen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">sw40140withbales.jpg</p>
+                            <p class="assets-desc-text no-margin">490KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/sw4014atwrapping.jpg" download="sw4014atwrapping.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/sw4014atwrapping.jpg" alt="Kuhn SW 4014 wickelt Ballen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">sw4014atwrapping.jpg</p>
+                            <p class="assets-desc-text no-margin">474KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/sw4014wrappingdone.jpg" download="sw4014wrappingdone.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/sw4014wrappingdone.jpg" alt="Kuhn SW 4014 mit gewickeltem Ballen" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">sw4014wrappingdone.jpg</p>
+                            <p class="assets-desc-text no-margin">627KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/storenormal.jpg" download="storenormal.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/storenormal.jpg" alt="Kuhn SW 4014" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">storenormal.jpg</p>
+                            <p class="assets-desc-text no-margin">338KB</p>
+                        </div>
+                    </div>
+                    <div class="assets-item">
+                        <a href="../images/mods/fs22/sw4014/storewrappingcolor.jpg" download="storewrappingcolor.jpg" class="assets-image">
+                            <img src="../images/mods/fs22/sw4014/storewrappingcolor.jpg" alt="Kuhn SW 4014 Folienfareben" class="assets-image-width">
+                        </a>
+                        <p class="no-margin assets-image-overlay display-center">⤓ DOWNLOAD</p>
+                        <div class="assets-desc">
+                            <p class="assets-desc-text no-margin">storewrappingcolor.jpg</p>
+                            <p class="assets-desc-text no-margin">101KB</p>
                         </div>
                     </div>
                 </div>
@@ -88,6 +200,6 @@
         <p class="footer"><a href="about.html">&Uuml;ber mich</a> | <a href="imprint.html">Impressum</a> | <a href="tos.html">Terms of Service</a><br>&copy; Stokman Games. All Rights Reserved</p>
     </footer>
     <!--End Footer-->
-    <script src="../scripts/change-display"></script>
+    <script src="../scripts/change-display.js"></script>
 </body>
 </html>

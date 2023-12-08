@@ -5,11 +5,10 @@
 body {
     background-color: #fff;
     min-height: 100vh;
-    color: #262626;
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, button {
+body, h1, h2, h3, h4, h5, h6, p, div, button {
     color: #262626;
 }
 
@@ -57,7 +56,7 @@ nav {
 nav a {
     float: left;
     font-size: 1rem;
-    color: white;
+    color: #d9d9d9;
     text-align: center;
     padding: 0px 16px;
     text-decoration: none;
@@ -72,7 +71,7 @@ nav a {
     font-size: 1rem;  
     border: none;
     outline: none;
-    color: white;
+    color: #d9d9d9;
     padding: 0px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -102,7 +101,7 @@ nav a:hover, .nav-dropdown:hover .dropdownbtn {
 }
         
 .dropdown-content a:hover {
-    background-color: #4d94ff;
+    background-color: #3385ff;
 }
         
 .nav-dropdown:hover .dropdown-content {
@@ -115,6 +114,10 @@ nav a:hover, .nav-dropdown:hover .dropdownbtn {
     font-size: 0.9375rem;
     text-align: left;
     margin: 50px 0;
+}
+
+footer a:hover {
+    color: #3385ff;
 }
 
 footer {
@@ -163,6 +166,10 @@ footer {
 .no-margin {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.select-none {
+    user-select: none;
 }
 
 .text-align-justify {

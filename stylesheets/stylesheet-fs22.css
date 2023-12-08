@@ -28,7 +28,7 @@
 }
 
 .moditembtn:hover {
-    background-color: #4d94ff;
+    background-color: #3385ff;
 }
 
 .moditembtn p {
@@ -84,82 +84,5 @@
 }
 
 .issuelist-style {
-    list-style-type: var("#");
-}
-
-@media only screen and (min-width: 900px) {
-    .grid-container-fs22 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 0;
-        grid-template-areas: 
-        "fs22-content-header-position fs22-content-header-position";
-    }
-
-    .fs22-content-header-grid-position {
-        grid-area: fs22-content-header-position;
-    }
-}
-
-@media only screen and (min-width: 1350px) {
-    .grid-container-fs22 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 0;
-        grid-template-areas: 
-        "fs22-content-header-position fs22-content-header-position fs22-content-header-position";
-    }
-
-    .fs22-content-header-grid-position {
-        grid-area: fs22-content-header-position;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    .grid-container-fs22-modpage {
-        margin-left: 5%;
-        margin-right: 5%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: 0;
-        grid-template-areas: 
-        "fs22-modpage-content-header-position fs22-modpage-content-header-position fs22-modpage-content-header-position"
-        "fs22-modpage-moddescribtion-position fs22-modpage-datatable-position fs22-modpage-downloadbtn-position"
-        "fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position"
-        "fs22-modpage-changelog-position fs22-modpage-changelog-position fs22-modpage-changelog-position"
-        "fs22-modpage-knownissues-position fs22-modpage-knownissues-position fs22-modpage-knownissues-position";
-    }
-
-    .fs22-modpage-content-header-grid-position {
-        grid-area: fs22-modpage-content-header-position;
-    }
-
-    .fs22-modpage-moddescribtion-grid-position {
-        grid-area: fs22-modpage-moddescribtion-position;
-    }
-
-    .fs22-modpage-datatable-grid-position {
-        grid-area: fs22-modpage-datatable-position;
-        margin: auto;
-    }
-
-    .fs22-modpage-downloadbtn-grid-position {
-        grid-area: fs22-modpage-downloadbtn-position;
-        max-width: 400px;
-    }
-
-    .fs22-modpage-slideable-gallery-grid-position {
-        grid-area: fs22-modpage-slideable-gallery-position;
-    }
-
-    .fs22-modpage-changelog-grid-position {
-        grid-area: fs22-modpage-changelog-position;
-    }
-
-    .fs22-modpage-knownissues-grid-position {
-        grid-area: fs22-modpage-knownissues-position;
-    }
+    list-style-type: "#  ";
 }

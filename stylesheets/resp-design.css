@@ -1,18 +1,47 @@
 @media only screen and (min-width: 800px) {
-    .grid-container-main {
-        margin: auto;
+    .grid-container-fs22-modpage {
+        margin-left: 5%;
+        margin-right: 5%;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto auto;
+        gap: 0;
         grid-template-areas: 
-        "header-position"
-        "nav-position"
-        "content-position"
-        "footer-position";
+        "fs22-modpage-content-header-position fs22-modpage-content-header-position fs22-modpage-content-header-position"
+        "fs22-modpage-moddescribtion-position fs22-modpage-datatable-position fs22-modpage-downloadbtn-position"
+        "fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position fs22-modpage-slideable-gallery-position"
+        "fs22-modpage-changelog-position fs22-modpage-changelog-position fs22-modpage-changelog-position"
+        "fs22-modpage-knownissues-position fs22-modpage-knownissues-position fs22-modpage-knownissues-position";
     }
 
-    .header-grid-position {
-        grid-area: header-position;
+    .fs22-modpage-content-header-grid-position {
+        grid-area: fs22-modpage-content-header-position;
+    }
+
+    .fs22-modpage-moddescribtion-grid-position {
+        grid-area: fs22-modpage-moddescribtion-position;
+    }
+
+    .fs22-modpage-datatable-grid-position {
+        grid-area: fs22-modpage-datatable-position;
+        margin: auto;
+    }
+
+    .fs22-modpage-downloadbtn-grid-position {
+        grid-area: fs22-modpage-downloadbtn-position;
+        max-width: 400px;
+    }
+
+    .fs22-modpage-slideable-gallery-grid-position {
+        grid-area: fs22-modpage-slideable-gallery-position;
+    }
+
+    .fs22-modpage-changelog-grid-position {
+        grid-area: fs22-modpage-changelog-position;
+    }
+
+    .fs22-modpage-knownissues-grid-position {
+        grid-area: fs22-modpage-knownissues-position;
     }
 
     header {
@@ -39,33 +68,57 @@
         margin-left: 6%;
     }
 
-    .nav-grid-position {
-        grid-area: nav-position;
+    .index-margin {
+        margin-bottom: 300PX;
     }
 
-    .footer-grid-position {
-        grid-area: footer-position;
-    }
-
-    .content-grid-position {
-        grid-area: content-position;
+    .assets-wrapper {
+        margin-left: 9%;
+        margin-right: 9%;
     }
 }
 
+@media only screen and (min-width: 900px) {
+    .grid-container-fs22 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0;
+        grid-template-areas: 
+        "fs22-content-header-position fs22-content-header-position";
+    }
+
+    .fs22-content-header-grid-position {
+        grid-area: fs22-content-header-position;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .grid-container-fs22 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0;
+        grid-template-areas: 
+        "fs22-content-header-position fs22-content-header-position fs22-content-header-position";
+    }
+
+    .fs22-content-header-grid-position {
+        grid-area: fs22-content-header-position;
+    }
+}
+
+/*Einstellungen/Personalisierung/Designs(Wahl zwischen hell und dunkel)*/
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #262626;
     }
 
-    h1, h2, h3, h4, h5, h6, p, div, button {
+    h1, h2, h3, h4, h5, h6, p, div, button, .downloadbtn p, .moditembtn p, .prev, .next {
         color: #d9d9d9;
     }
 
-    nav {
-        background-color: #333;
-    }
-
-    .dropdown-content {
+    nav, .dropdown-content, .downloadbtn, .moditembtn {
         background-color: #333;
     }
 
@@ -81,27 +134,11 @@
         background-color: #151515;
     }
 
-    .downloadbtn {
-        background-color: #333;
-    }
-    
-    .downloadbtn p {
-        color: #d9d9d9;
+    footer a:hover {
+        color: #3c20e9;
     }
 
-    .downloadbtn:hover {
-        background-color: #3c20e9;
-    }
-
-    .moditembtn {
-        background-color: #333;
-    }
-
-    .moditembtn p {
-        color: #d9d9d9;
-    }
-
-    .moditembtn:hover {
+    .downloadbtn:hover, .moditembtn:hover {
         background-color: #3c20e9;
     }
 
@@ -109,16 +146,20 @@
         border-bottom-color: #d9d9d9;
     }
 
-    .prev, .next {
-        color: #d9d9d9;
-    }
-
     .prev:hover, .next:hover {
         background-color: #000
     }
 
     #assets-menu {
-        background-color: #262626;
+        background-color: #222;
+    }
+
+    .assets-menu-tab:hover {
+        text-decoration: underline #3c20e9 solid 2px;
+    }
+
+    .assets-wrapper {
+        background-color: #222;
     }
 
     .date {
