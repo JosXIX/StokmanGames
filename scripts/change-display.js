@@ -23,7 +23,7 @@ function changeChecked(checkbox) {
 function changeAssetContainer(button) {
     const assetsContainer = button.parentElement.nextElementSibling;
 
-    if (assetsContainer.style.display === "none" || assetsContainer.style.display === "") {
+    if (assetsContainer.style.display === "none") {
         showAssetContainer(assetsContainer);
     } else {
         hideAssetContainer(assetsContainer);

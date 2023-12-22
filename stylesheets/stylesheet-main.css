@@ -21,6 +21,10 @@ a {
     color: #4d94ff;
 }
 
+button {
+    background-color: #ccc;
+}
+
 header {
     position: relative;
     width: 100px;
@@ -133,6 +137,10 @@ footer {
     justify-content: center;
 }
 
+.display-flex {
+    display: flex;
+}
+
 .sticky-top {
     position: sticky;
     top: 0;
@@ -199,7 +207,6 @@ footer {
 }
 
 .downloadbtn {
-    background-color: #ccc;
     width: 90%;
     margin: 0;
     display: inline-block;

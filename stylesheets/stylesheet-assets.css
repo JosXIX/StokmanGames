@@ -1,9 +1,36 @@
 #assets {
     font-size: 2rem;
+    padding-top: 15px;
+    padding-left: 4%;
+    margin-bottom: 0;
+}
+
+#start-assets {
+    background-color: #ccc;
+}
+
+#download-assets {
+    position: absolute;
+    right: 0;
+    min-width: 280px;
+    width: auto;
+    background-color: red;
+    font-size: 2rem;
+    margin-top: 45px;
+    margin-right: 5%;
+    border: transparent;
+}
+
+#download-assets img {
+    margin-right: 11px;
+    margin-bottom: 3px;
+}
+
+#download-assets:hover {
+    cursor: pointer;
 }
 
 #assets-menu {
-    background-color: #ccc;
     max-width: 1200px;
     margin: auto;
     margin-top: 20px;
@@ -27,6 +54,11 @@
 .assets-wrapper {
     padding: 25px;
     background-color: #ddd;
+    border-bottom: 1px solid #aaa;
+}
+
+.assets-header {
+    padding-bottom: 15px;
 }
 
 .assets-header-tab {
@@ -43,6 +75,11 @@
     opacity: 0.7;
 }
 
+.assets-header-desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .date {
     display: inline-flex;
     color: #3385ff;
@@ -56,8 +93,22 @@
     rotate: 90deg;
 }
 
+.multidownload-btn {
+    float: right;
+    min-width: 130px;
+    width: auto;
+    min-height: 30px;
+    height: auto;
+    border: 1px solid #262626;
+    display: block;
+}
+
+.multidownload-btn:hover {
+    cursor: pointer;
+}
+
 .assets-container {
-    display: none;
+    display: grid;
     justify-content: space-around;
     max-width: 1600px;
     grid-template-columns: repeat(auto-fill, 220px);
@@ -66,8 +117,12 @@
     gap: 10px;
 }
 
+.assets-item {
+    border: 1px solid transparent;
+}
+
 .assets-image-width {
-    max-width: 200px;
+    max-width: 100%;
 }
 
 .assets-image {
@@ -85,4 +140,33 @@
 
 .assets-image:hover + .assets-image-overlay {
     opacity: 1;
+}
+
+.assets-desc-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.download-checkbox {
+    float: right;
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 2px;
+    height: 27px;
+    width: 27px;
+    border: 1px solid transparent;
+}
+
+.download-checkbox:hover {
+    cursor: pointer;
+}
+
+.checked::after {
+    font-size: 1.1rem;
+    content: "\2713";
+}
+
+.download-border {
+    border: 1px solid #262626;
 }
