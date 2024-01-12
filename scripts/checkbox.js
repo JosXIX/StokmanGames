@@ -52,8 +52,8 @@ function toggleCheckBoxState(element) {
 }
 
 function uncheck(checkboxes, assetsItem) {
-    checkboxes.className = checkboxes.className.replace(" checked", "");
     assetsItem.className = assetsItem.className.replace(" download-border", "");
+    checkboxes.className = checkboxes.className.replace(" checked", "");
     checkcounter--;
 }
 
@@ -78,64 +78,24 @@ function updateDownload() {
 }
 
 function startDownload() {
-    let items, checkedItems, assetsItems = [];
+    let items, checkedCheckBoxes, assetsItemsBorder = [];
     items = document.getElementsByClassName('download-checkbox');
-    checkedItems = document.getElementsByClassName('checked');
-    assetsItems = document.querySelectorAll('.assets-item .checked');
+    checkedCheckBoxes = document.getElementsByClassName('checked');
+    assetsItemsBorder = document.getElementsByClassName('download-border');
     multiDownBtn = document.getElementsByClassName('multidownload-btn');
     let storedItems = [];
     let storedItemsIndex = 0;
-    let checkedItemsIndex = checkedItems.length;
+    let checkedItemsIndex = checkcounter;
 
-    for (let i = 0; i < items.length; i++) {
-        if (items[i].className.includes("checked")) {
-            storedItems[storedItemsIndex] = items[i];
+    while (checkedItemsIndex >= 1) {
+        if (items[0].className.includes("checked")) {
+            storedItems[0] = items[0];
             storedItemsIndex++;
         }
-    }
-
-    for (let i = 0; i < checkedItemsIndex; i++) {
-        uncheck(checkedItems[i], assetsItems[i]);
-    }
-
-    for (let i = 0; i < multiDownBtn.length; i++) {
-        updateToSelectAll(multiDownBtn[i]);
+        uncheck(checkedCheckBoxes[0], assetsItemsBorder[0]);
+        updateToSelectAll(multiDownBtn[0]);
+        checkedItemsIndex = checkcounter;
     }
 
     updateDownload();
 }
-
-/*function toggleCheckBoxState(element) {
-    let container = element.closest('.assets-container');
-    let itemcontainer = container.getElementsByClassName('download-checkbox');
-    let checkboxes = [];
-    let downBtn = container.previousElementSibling.querySelector(".multidownload-btn");
-    let allSelected = true;
-
-    if (element.className.includes("checked")) {
-        element.className = element.className.replace(" checked", "");
-        checkcounter--;
-    } else {
-        element.className += " checked";
-        checkcounter++;
-    }
-
-    for (let i = 0; i < itemcontainer.length; i++) {
-        checkboxes.push(itemcontainer[i].checked);
-    }
-
-    for (let i = 0; i < checkboxes.length; i++) {
-        if (!checkboxes[i]) {
-            allSelected = false;
-            break;
-        }
-    }
-
-    if (!allSelected) {
-        downBtn.className = downBtn.className.replace(" select-all", "");
-        downBtn.textContent = "Select All";
-    } else {
-        downBtn.className += " select-all";
-        downBtn.textContent = "Deselect All";
-    }
-}*/
