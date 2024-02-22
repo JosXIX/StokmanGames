@@ -4,16 +4,16 @@ function toggleMultiDownload(selectAllBtn, checkboxContainer, assetsContainer) {
     let checkboxes = checkboxContainer.querySelectorAll(".download-checkbox");
     let assetsItems = assetsContainer.querySelectorAll(".assets-item");
 
-    if (selectAllBtn.className.includes("select-all")) {
+    if (selectAllBtn.classList.contains("select-all")) {
         for (let i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].className.includes("checked")) {
+            if (checkboxes[i].classList.contains("checked")) {
                 uncheck(checkboxes[i], assetsItems[i]);
             }
         }
         updateToSelectAll(selectAllBtn);
     } else {
         for (let i = 0; i < checkboxes.length; i++) {
-            if (!checkboxes[i].className.includes("checked")) {
+            if (!checkboxes[i].classList.contains("checked")) {
                 check(checkboxes[i], assetsItems[i]);
             }
         }
@@ -30,7 +30,7 @@ function toggleCheckBoxState(checkbox) {
     let checkboxes = [];
     let downloadBtn = container.previousElementSibling.querySelector(".multidownload-btn");
 
-    if (checkbox.className.includes("checked")) {
+    if (checkbox.classList.contains("checked")) {
         uncheck(checkbox, assetsItem);
     } else {
         check(checkbox, assetsItem);
@@ -52,24 +52,24 @@ function toggleCheckBoxState(checkbox) {
 }
 
 function uncheck(checkbox, assetsItem) {
-    assetsItem.className = assetsItem.className.replace(" download-border", "");
-    checkbox.className = checkbox.className.replace(" checked", "");
+    assetsItem.classList.remove("download-border");
+    checkbox.classList.remove("checked");
     checkcounter--;
 }
 
 function check(checkbox, assetsItem) {
-    checkbox.className += " checked";
-    assetsItem.className += " download-border";
+    checkbox.classList.add("checked");
+    assetsItem.classList.add("download-border");
     checkcounter++;
 }
 
 function updateToSelectAll(btn) {
-    btn.className = btn.className.replace(" select-all", "");
+    btn.classList.remove("select-all");
     btn.textContent = "Select All";
 }
 
 function updateToDeselectAll(btn) {
-    btn.className += " select-all";
+    btn.classList.add("select-all");
     btn.textContent = "Deselect All";
 }
 
@@ -87,7 +87,7 @@ function startDownload() {
     let checkedItemsIndex = checkcounter;
 
     while (checkedItemsIndex >= 1) {
-        if (checkboxes[0].className.includes("checked")) {
+        if (checkboxes[0].classList.contains("checked")) {
             storedItems[0] = checkboxes[0];
         }
         uncheck(checkedCheckboxes[0], assetsItemsBorders[0]);
