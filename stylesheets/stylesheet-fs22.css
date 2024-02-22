@@ -1,3 +1,21 @@
+.fs22-title-page {
+    margin-bottom: 10px;
+}
+
+.search-label {
+    font-size: 1.4rem;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    font-size: 1rem;
+    color: #262626;
+    background-color: #ccc;
+}
+
 .moditem-max-width {
     max-width: 400px;
     width: 100%;

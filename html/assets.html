@@ -29,14 +29,17 @@
     </nav>
     <!--End Nav-->
     <!--Start Main Content-->
-    <div class="main-content-margin">
+    <div class="main-content-margin" id="assets-margin-down">
         <section>
             <h2>Stokman Games | Bilder und Videos</h2>
         </section>
         <section id="start-assets" class="sticky-top">
             <div class="display-flex">
                 <h3 id="assets">Assets</h3>
-                <button id="download-assets" onclick="startDownload()"><img src="../images/company/icon/16x/097-download.png">DOWNLOAD 0</button>
+                <button id="download-btn" onclick="startDownload()">
+                    <img id="download-btn-image" src="../images/company/icon/16x/097-download.png">
+                    <p class="no-margin display-inline" id="download-btn-text">DOWNLOAD 0</p>
+                </button>
             </div>
             <div id="assets-menu" class="sticky-top">
                 <button class="assets-menu-tab" onclick="changeTab(0)"><p class="no-margin">News</p></button>

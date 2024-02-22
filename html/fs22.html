@@ -32,7 +32,11 @@
     <div class="main-content-margin">
         <div class="grid-container-fs22">
             <section class="fs22-content-header-grid-position">
-                <h2>Landwirtschafts Simulator 22</h2>
+                <h2 class="fs22-title-page">Landwirtschafts Simulator 22</h2>
+                <div class="sticky-top margin-center search-container">
+                    <label for="searchInput"><p class="display-inline search-label">Search:</p></label>
+                    <input type="text" id="searchInput" oninput="liveSearch()">
+                </div>
             </section>
             <div class="padding-down moditem-max-width center-div">
                 <h3 class="moditem-header">Kuhn SW 4014</h3>
@@ -56,5 +60,6 @@
         <p class="footer"><a href="about.html">&Uuml;ber mich</a> | <a href="imprint.html">Impressum</a> | <a href="tos.html">Terms of Service</a><br>&copy; Stokman Games. All Rights Reserved</p>
     </footer>
     <!--End Footer-->
+    <script src="../scripts/livesearch.js"></script>
 </body>
 </html>

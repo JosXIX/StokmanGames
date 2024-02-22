@@ -76,6 +76,26 @@
         margin-left: 9%;
         margin-right: 9%;
     }
+
+    .margin-center {
+        margin-left: 40%;
+    }
+
+    .fs22-title-page {
+        margin-bottom: 20px;
+    }
+
+    .search-label {
+        font-size: 2rem;
+    }
+
+    #searchInput {
+        font-size: 1.4rem;
+    }
+
+    .search-container {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width: 900px) {
@@ -90,6 +110,10 @@
 
     .fs22-content-header-grid-position {
         grid-area: fs22-content-header-position;
+    }
+
+    .search-container {
+        margin-bottom: 20px;
     }
 }
 
@@ -114,11 +138,11 @@
         background-color: #262626;
     }
 
-    h1, h2, h3, h4, h5, h6, p, div, button, .downloadbtn p, .moditembtn p, .prev, .next {
+    h1, h2, h3, h4, h5, h6, p, div, button, .downloadbtn p, .moditembtn p, .prev, .next, #searchInput {
         color: #d9d9d9;
     }
 
-    button, nav, .dropdown-content, .downloadbtn, .moditembtn {
+    button, nav, .dropdown-content, .downloadbtn, .moditembtn, #searchInput {
         background-color: #333;
     }
 

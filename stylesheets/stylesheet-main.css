@@ -141,6 +141,14 @@ footer {
     display: flex;
 }
 
+.display-inline {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
 .sticky-top {
     position: sticky;
     top: 0;
@@ -161,6 +169,10 @@ footer {
 .main-content-margin {
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.margin-center {
+    margin-left: 30%;
 }
 
 .margin-left {
